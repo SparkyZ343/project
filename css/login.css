@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.LoginForm{
+    /* background-color: bisque; */
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 600px;
+    margin-bottom: 80px;
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    outline-style: solid;
+    outline-width: 2px;
+ 
+    
+}
+
+
+.LoginForm h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.LoginForm a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.LoginForm a:hover{
+    text-decoration: underline;
+    color: #313030;
+}
+
+.LoginForm p{
+    margin-top: 10px;
+}
+
+
+.LoginInput{
+    width: 70%;
+    height: 30px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #000000;
+    
+}
+.LoginInput:hover{
+    border-color: rgb(255, 255, 255); 
+    
+}
+
+.LoginSubmit{
+    height: 30px;
+    width: 80px;
+    background-color: crimson;
+    color: whitesmoke;
+    margin-top: 10px;
+    border-radius: 6px;
+    border-color:black;
+    border-style: ridge;
+
+}
+.LoginSubmit:hover{
+    background-color: rgb(255, 0, 51);
+}
+
+.LoginContainer{
+    height: 100vh;
+    background-color: rgb(24,61,61);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    background-image: url(../images/flat1.jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+nav{
+    background-color:rgb(0, 0, 0);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav h1{
+    color: cornsilk;
+}
+
+.LoginNavContainer{
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.LoginNavContainer a{
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: cornsilk;
+    text-decoration-color: transparent;
+    text-underline-offset: 2px;
+    text-decoration-color: rgb(255, 249, 249);
+}
+.LoginNavContainer a:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: blueviolet;
+    transition: text-underline-offset 500ms,text-decoration-color 500ms;
+    
+    
+}
+
+.DashboardHeading{
+    display: flex;
+    justify-content: center;
+}
+

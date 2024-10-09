@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav h1 {
+    margin: 0;
+    display: inline;
+}
+
+.ViewPropertiesContainer {
+    float: right;
+}
+
+.ViewPropertiesContainer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.ViewPropertiesContainer a:hover {
+    text-decoration: underline;
+}
+
+.ViewPropertiesHeading {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.PropertiesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90%, 1fr)); /* Make each card wider */
+    gap: 20px;
+    padding: 20px;
+}
+
+.PropertyCard {
+    display: flex; /* Use flexbox for layout */
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Increased padding for more spacing */
+    transition: transform 0.2s; /* Add a transition for hover effect */
+    width: 100%; /* Ensure cards take full width available */
+}
+
+.PropertyCard:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.PropertyImage {
+    width: 200px; /* Increased width for the image */
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px; /* More space between image and details */
+}
+
+.PropertyDetails {
+    flex: 1; /* Allows the details to take remaining space */
+}
+
+.PropertyTitle {
+    font-size: 1.8em; /* Increased font size for title */
+    margin: 10px 0;
+}
+
+.PropertyType, .PropertyLocation, .PropertyPrice {
+    margin: 5px 0;
+    font-size: 1.2em; /* Slightly larger font size */
+}
+
+.LikeButton {
+    background: none; /* No background for heart */
+    border: none; /* No border */
+    color: #ff4081; /* Heart color */
+    font-size: 2em; /* Larger font size for heart */
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.LikeButton:hover {
+    transform: scale(1.2); /* Scale up on hover */
+}
